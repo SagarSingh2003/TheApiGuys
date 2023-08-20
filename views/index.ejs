@@ -1,0 +1,27 @@
+<div class="author">
+    <h1 class="author_heading">Hi , I am Sagar.</h1>
+    <p lcass="author_body">Web developer and content creator.</p>
+</div>
+
+<img src="img/hero-image.webp" alt="person looking out of window" class="hero-image" width="981" height="528">
+
+<section class="articles">
+    <h2 class="articles_heading">Latest Posts</h2>
+
+    <ul class="article-ul">
+      <% data.forEach(post => { %>
+        <li>
+            <a href="/post/<%= post._id %>">
+                <span> <%= post.title %></span>
+                <span class="article-list_date"><%= post.createdAt.toDateString() %></span>
+            </a>
+        </li>
+       <% }) %>
+
+
+    </ul>
+
+   
+
+</section>
+ 
