@@ -2,6 +2,7 @@ const express = require('express');
 //we are gonna use express router so that our app.js does not bloat
 const router = express.Router();
 const Post = require('../models/Post');
+const axios = require('axios');
 
 
 //making the public folder public:
@@ -10,6 +11,10 @@ express.static('public')
 let nextPage = null;
 let hasNextPage = false;
 
+
+const jokesurl = "https://cloud.syncloop.com/tenant/1691731675822/packages.handson3.api.getJokes.main"; 
+const quotesurl = "https://cloud.syncloop.com/tenant/1691731675822/packages.handson3.api.getQuotes.main";
+const token = "5zX/2VXijNuKmwQIwaM2mTxLIUcrMw/l8djfBMZyBOklB5bXVUH6+fd+qV8hA0QG0cMfuZKeddg0zztf2o72KCfkU3U+npM8xcBKwFSXdFXMDvzqQ8xx+XlowQzNckqU/VGIPb1ctNf2R2Ku5dG1GeFugAV/jSNHWf3r+MkLlA1o/Np3A/h3lDKWnNtHfnV+Xt7YPzvtR9P3G9rn/1GAYELiL5ykIpNYyRoHI2FQEN356Jx+gM9v9/WOfJ0yJ3hRufDNDRBdMcOLJ06gVRTaj6p3cTxK8K1nZwacKJQn/Y7BK9hvsPZdOZlRh6jiPcFKqpVyxKpa0Y2dCiErOhtmfnLUNWYVDCbPF2pTOkh5EqwHDnPTQ4C8W3yjDL4jYLhVFiBI1JN0DydSrlWCUOrG1VwrxKbZ22urEKOhBKsHyehpdwMP3kK/VPNg81jpGaabOjZ4zdVZQEREKCyEsBmX51Xar+THMkDq+9ka9KtljORblsQIVBg4wViLiVnV5etR";
 /*
 *GET /
 *HOME 
@@ -53,24 +58,49 @@ let hasNextPage = false;
 // });
 
 
+const locals = {
+    title: "NodeJs Blog",
+    description: "Simple Blog created with NodeJs, express & mongodb" 
+}
+
+
 
 
  router.get('' , async (req, res) =>{
     //rendering data or passing data
-    const locals = {
-         title: "NodeJs Blog",
-         description: "Simple Blog created with NodeJs, express & mongodb"
-     }
+   
 
 
      try{
          const data = await Post.find();
-         res.render('index', {locals , data});
-     }catch (error) {
+
+        const config = {
+            headers: { Authorization: `Bearer ${token}` }
+        };
+        
+        //getting jokes response
+        const responseJoke = await axios.get( 
+          jokesurl,
+          config
+        )
+        
+        const joke = responseJoke.data.response.jsonDoc.joke;
+   
+        
+        //getting quotes response 
+        const responseQuote = await axios.get( 
+            quotesurl,
+            config
+        )
+        const quote = responseQuote.data.response.jsonDoc.quoteText;
+        
+        res.render('index', {locals , data , quot: quote , jok: joke});
+
+    }catch (error) {
          console.log(error);
      }
 
- });
+});
 
 
 
