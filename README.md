@@ -2,7 +2,7 @@
 
 - Guys you can clone the repo ,please make sure that you have node installed in your system
 
--  to install all the dependencies run in the terminal:
+- to install all the dependencies run in the terminal:
   ```
   npm install
   ```
