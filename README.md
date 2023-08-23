@@ -1,10 +1,12 @@
 # TheApiGuys
 
+- please make sure that you have node installed in your system
+
 - Guys you can clone the repo , to install all the dependencies run in the terminal:
   ```
   npm install
   ```
-- please make sure that you have node installed in your system
+
 - to start the program :
   ```
   npm run dev
