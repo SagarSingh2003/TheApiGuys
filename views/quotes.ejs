@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/quotes.css" />
+  </head>
+  <body>
+
+    <div class="navbar">
+            
+      <div class="guys">
+          <h1> TheApiGuys </h1>
+      </div>
+
+      <div class="nav-links">
+          <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="/about"> About Us </a></li>
+            <li><a href="/resources"> Resources </a></li>
+            <li><a href="/jokes"> Jokes </a></li>
+            <li><a href="/quotes"> Quotes </a></li>
+          </ul>
+      </div>
+
+
+</div> 
+  <div class="quotes">
+    <div class="div">
+
+      <div class="group-2">
+        <div class="text-wrapper-8">Quote of the day</div>
+        <% if (locals.quot) { %>
+
+          <div class="rectangle"> <%= quot %></div>
+        
+
+          <% } else{%>
+
+            <div class="rectangle"> lets hear a quote </div>
+          
+
+            <% }%>
+              
+        <div class="div-wrapper">
+          <form action="/quotes" method="post" >
+          <div class="overlap-group-2"><input type="submit" value="generate a new quote" class="text-wrapper-9" style="background-color: azure;border: none; padding:10px ; padding-right: 25px ; cursor: pointer;"></div>
+          </form>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  </body>
+</html>

@@ -1,0 +1,416 @@
+.resources {
+    background-color: #faf5ee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+ .navbar {
+    color: #1c1c1c;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.guys {
+    color: #1c1c1c;
+    font-size: 20px;
+}
+
+.nav-links {
+    margin-top: 1.5%;
+    justify-content: left;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 8px 40px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size:  25px;
+}
+
+.search {
+    margin-top: 1.5%;
+    color: #1c1c1c;
+    font-size: 40px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search img {
+    height: 70%;
+    width: 40%;
+    right: 30%;
+}
+
+.search button {
+    background-color: #FAF5EE;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+}
+  
+  .resources .div {
+    background-color: #faf5ee;
+    width: 1440px;
+    height: 3869px;
+    position: relative;
+  }
+  
+  .resources .group {
+    position: absolute;
+    width: 1408px;
+    height: 810px;
+    top: 406px;
+    left: 17px;
+  }
+  
+  .resources .overlap-group {
+    height: 810px;
+    background-image: url(../img/org_1.jpg);
+    position: relative;
+    width: 1406px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .resources .national-alliance-on {
+    position: absolute;
+    width: 608px;
+    top: 507px;
+    left: 25px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .rectangle {
+    width: 633px;
+    height: 312px;
+    top: 498px;
+    left: 0;
+    border-radius: 0px 0px 0px 43px;
+    position: absolute;
+    background-color: #ffffff;
+    mix-blend-mode: color-dodge;
+  }
+  
+  .resources .overlap-wrapper {
+    position: absolute;
+    width: 1408px;
+    height: 810px;
+    top: 2151px;
+    left: 0;
+  }
+  
+  .resources .overlap {
+    height: 810px;
+    background-image: url(../img/org_3.jpg);
+    position: relative;
+    width: 1406px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .resources .psychcentral {
+    position: absolute;
+    width: 608px;
+    top: 536px;
+    left: 25px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .rectangle-2 {
+    position: absolute;
+    width: 605px;
+    height: 290px;
+    top: 520px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 0px 0px 0px 43px;
+    mix-blend-mode: color-dodge;
+  }
+  
+  .resources .group-wrapper {
+    position: absolute;
+    width: 1406px;
+    height: 810px;
+    top: 3004px;
+    left: 0;
+    background-image: url(../img/org_4.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .resources .overlap-group-wrapper {
+    position: relative;
+    width: 607px;
+    height: 235px;
+    top: 575px;
+    left: 801px;
+  }
+  
+  .resources .mind-mind-is-a-UK-wrapper {
+    width: 605px;
+    height: 235px;
+    border-radius: 0px 0px 43px 0px;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .resources .mind-mind-is-a-UK {
+    position: absolute;
+    width: 593px;
+    top: 0;
+    left: 6px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .div-wrapper {
+    position: absolute;
+    width: 1408px;
+    height: 849px;
+    top: 1259px;
+    left: 17px;
+  }
+  
+  .resources .overlap-2 {
+    height: 849px;
+    background-image: url(../img/org_2.jpg);
+    position: relative;
+    width: 1406px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .resources .mental-health {
+    position: absolute;
+    width: 767px;
+    top: 13px;
+    left: 594px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .rectangle-3 {
+    width: 833px;
+    height: 206px;
+    top: 0;
+    left: 573px;
+    border-radius: 0px 43px 0px 0px;
+    position: absolute;
+    background-color: #ffffff;
+    mix-blend-mode: color-dodge;
+  }
+  
+  .resources .group-2 {
+    position: absolute;
+    width: 1362px;
+    height: 343px;
+    top: 25px;
+    left: 40px;
+  }
+  
+  .resources .group-3 {
+    position: absolute;
+    width: 1362px;
+    height: 75px;
+    top: 0;
+    left: 0;
+  }
+  
+  .resources .navbar {
+    position: absolute;
+    width: 657px;
+    height: 48px;
+    top: 13px;
+    left: 393px;
+  }
+  
+  .resources .text-wrapper {
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .text-wrapper-2 {
+    left: 115px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .text-wrapper-3 {
+    left: 232px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .text-wrapper-4 {
+    left: 418px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .text-wrapper-5 {
+    left: 531px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .text-wrapper-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #1c1c1c;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .group-4 {
+    position: absolute;
+    width: 223px;
+    height: 73px;
+    top: 0;
+    left: 1139px;
+  }
+  
+  .resources .overlap-group-2 {
+    width: 221px;
+    height: 73px;
+    border-radius: 90px;
+    border: 3px solid;
+    border-color: #000000;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .resources .iconly-bold-search {
+    position: absolute;
+    width: 35px;
+    height: 37px;
+    top: 15px;
+    left: 21px;
+  }
+  
+  .resources .text-wrapper-7 {
+    position: absolute;
+    width: 127px;
+    top: 10px;
+    left: 69px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .text-wrapper-8 {
+    position: absolute;
+    top: 271px;
+    left: 59px;
+    font-family: "Poppins-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources .group-5 {
+    position: absolute;
+    width: 1021px;
+    height: 72px;
+    top: 80px;
+    left: 179px;
+  }
+  
+  .resources .p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .resources .group-5 img {
+    top: 60px;
+    left: 850px;
+  }
+  
+  .resources .iconly-bulk-arrow {
+    position: absolute;
+    width: 35px;
+    height: 37px;
+    top: 18px;
+    left: 984px;
+  }
+  

@@ -1,0 +1,410 @@
+.resources-disorders {
+    background-color: #faf5ee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar {
+    color: #1c1c1c;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.guys {
+    color: #1c1c1c;
+    font-size: 20px;
+}
+
+.nav-links {
+    margin-top: 1.5%;
+    justify-content: left;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 8px 40px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size:  25px;
+}
+
+.search {
+    margin-top: 1.5%;
+    color: #1c1c1c;
+    font-size: 40px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search img {
+    height: 70%;
+    width: 40%;
+    right: 30%;
+}
+
+.search button {
+    background-color: #FAF5EE;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+}
+  
+  .resources-disorders .div {
+    background-color: #faf5ee;
+    width: 1440px;
+    height: 2232px;
+    position: relative;
+  }
+  
+  .resources-disorders .group {
+    position: absolute;
+    width: 1362px;
+    height: 75px;
+    top: 25px;
+    left: 40px;
+  }
+  
+  .resources-disorders .navbar {
+    position: absolute;
+    width: 657px;
+    height: 48px;
+    top: 13px;
+    left: 393px;
+  }
+  
+  .resources-disorders .text-wrapper {
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .text-wrapper-2 {
+    left: 115px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .text-wrapper-3 {
+    left: 232px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .text-wrapper-4 {
+    left: 418px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .text-wrapper-5 {
+    left: 531px;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .text-wrapper-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #1c1c1c;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .overlap-group-wrapper {
+    position: absolute;
+    width: 223px;
+    height: 73px;
+    top: 0;
+    left: 1139px;
+  }
+  
+  .resources-disorders .overlap-group {
+    position: relative;
+    width: 221px;
+    height: 73px;
+    background-color: #ffffff;
+    border-radius: 90px;
+    border: 3px solid;
+    border-color: #000000;
+  }
+  
+  .resources-disorders .iconly-bold-search {
+    position: absolute;
+    width: 35px;
+    height: 37px;
+    top: 15px;
+    left: 21px;
+  }
+  
+  .resources-disorders .text-wrapper-7 {
+    position: absolute;
+    width: 127px;
+    top: 10px;
+    left: 69px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .text-wrapper-8 {
+    position: absolute;
+    top: 295px;
+    left: 99px;
+    font-family: "Poppins-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .group-2 {
+    position: absolute;
+    width: 1021px;
+    height: 72px;
+    top: 186px;
+    left: 219px;
+  }
+  
+  .resources-disorders .p {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .resources-disorders .group-2 img {
+    top: 30px;
+    left: 850px;
+  }
+  
+  .resources-disorders .iconly-bulk-arrow {
+    position: absolute;
+    width: 35px;
+    height: 37px;
+    top: 18px;
+    left: 984px;
+  }
+  
+  .resources-disorders .overlap-wrapper {
+    position: absolute;
+    width: 1296px;
+    height: 1672px;
+    top: 454px;
+    left: 72px;
+  }
+  
+  .resources-disorders .overlap {
+    position: relative;
+    width: 1298px;
+    height: 1672px;
+  }
+  
+  .resources-disorders .div-wrapper {
+    position: absolute;
+    width: 685px;
+    height: 684px;
+    top: 35px;
+    left: 0;
+  }
+  
+  .resources-disorders .overlap-group-2 {
+    position: relative;
+    width: 683px;
+    height: 684px;
+    background-image: url(../img/anxiety_disorder.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;
+  }
+  
+  .resources-disorders .text-wrapper-9 {
+    position: absolute;
+    top: 43px;
+    left: 195px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .group-3 {
+    position: absolute;
+    width: 685px;
+    height: 684px;
+    top: 0;
+    left: 611px;
+  }
+  
+  .resources-disorders .overlap-2 {
+    position: relative;
+    width: 683px;
+    height: 684px;
+    background-image: url(../img/bipolar_disorder.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;
+  }
+  
+  .resources-disorders .text-wrapper-10 {
+    position: absolute;
+    top: 251px;
+    left: 7px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    border-radius: 100%;
+  }
+  
+  .resources-disorders .group-4 {
+    position: absolute;
+    width: 685px;
+    height: 684px;
+    top: 486px;
+    left: 420px;
+  }
+  
+  .resources-disorders .overlap-3 {
+    position: relative;
+    width: 683px;
+    height: 684px;
+    background-image: url(../img/eating_disorder.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;
+  }
+  
+  .resources-disorders .text-wrapper-11 {
+    position: absolute;
+    top: 60px;
+    left: 211px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .group-5 {
+    position: absolute;
+    width: 685px;
+    height: 684px;
+    top: 988px;
+    left: 28px;
+  }
+  
+  .resources-disorders .overlap-4 {
+    position: relative;
+    width: 683px;
+    height: 684px;
+    background-image: url(../img/personality_disorder.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;
+  }
+  
+  .resources-disorders .text-wrapper-12 {
+    position: absolute;
+    top: 536px;
+    left: 147px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .resources-disorders .group-6 {
+    position: absolute;
+    width: 685px;
+    height: 684px;
+    top: 988px;
+    left: 613px;
+  }
+  
+  .resources-disorders .overlap-5 {
+    position: relative;
+    width: 683px;
+    height: 684px;
+    background-image: url(../img/panic_attack.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 100%;  
+  }
+  
+  .resources-disorders .text-wrapper-13 {
+    position: absolute;
+    top: 563px;
+    left: 164px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

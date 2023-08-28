@@ -3,63 +3,20 @@ const express = require('express');
 const router = express.Router();
 const Post = require('../models/Post');
 const axios = require('axios');
+const path = require('path');
 
 
 //making the public folder public:
-express.static('public')
-
-let nextPage = null;
-let hasNextPage = false;
+router.use(express.static('public'));
 
 
-const jokesurl = "https://cloud.syncloop.com/tenant/1691731675822/packages.handson3.api.getJokes.main"; 
-const quotesurl = "https://cloud.syncloop.com/tenant/1691731675822/packages.handson3.api.getQuotes.main";
-const token = "5zX/2VXijNuKmwQIwaM2mTxLIUcrMw/l8djfBMZyBOklB5bXVUH6+fd+qV8hA0QG0cMfuZKeddg0zztf2o72KCfkU3U+npM8xcBKwFSXdFXMDvzqQ8xx+XlowQzNckqU/VGIPb1ctNf2R2Ku5dG1GeFugAV/jSNHWf3r+MkLlA1o/Np3A/h3lDKWnNtHfnV+Xt7YPzvtR9P3G9rn/1GAYELiL5ykIpNYyRoHI2FQEN356Jx+gM9v9/WOfJ0yJ3hRufDNDRBdMcOLJ06gVRTaj6p3cTxK8K1nZwacKJQn/Y7BK9hvsPZdOZlRh6jiPcFKqpVyxKpa0Y2dCiErOhtmfnLUNWYVDCbPF2pTOkh5EqwHDnPTQ4C8W3yjDL4jYLhVFiBI1JN0DydSrlWCUOrG1VwrxKbZ22urEKOhBKsHyehpdwMP3kK/VPNg81jpGaabOjZ4zdVZQEREKCyEsBmX51Xar+THMkDq+9ka9KtljORblsQIVBg4wViLiVnV5etR";
-/*
-*GET /
-*HOME 
-*/
 
-// //Routes
-// router.get('' , async (req, res) =>{
-//     //rendering data or passing data
-//     try {
-//     const locals = {
-//         title: "NodeJs Blog",
-//         description: "Simple Blog created with NodeJs, express & mongodb"
-//     }
+ 
 
-//     let perPage = 5;
-//     let page = req.query.page ||  1;
-
-//     const data = await Post.aggregate([{ $sort: { createdAt: -1 } } ])
-//     .skip(perPage * page - perPage)
-//     .limit(perPage)
-//     .exec();
-
-//     // const count = await Post.count();
-//     // nextPage = parseInt(page) + 1;
-//     // hasNextPage = nextPage <= Math.ceil(count / perPage);
-    
-//      res.render('index', {
-//          locals,
-//          data,
-//        current: page,
-//        nextPage : hasNextPage ? nextPage : null
-//     });
-    
-    
-       
-//         res.render('index', {locals , data});
-//     }catch (error) {
-//         console.log(error);
-//     }
-
-// });
 
 
 const locals = {
-    title: "NodeJs Blog",
+    title: "TheApiGuys",
     description: "Simple Blog created with NodeJs, express & mongodb" 
 }
 
@@ -176,9 +133,8 @@ router.post('/search' , async (req, res) =>{
 
 
 
-router.get('/about' , (req, res) =>{
-    res.render('about');
-});
+
+
 
 module.exports = router;
 
