@@ -1,0 +1,351 @@
+    .resources-helplines {
+        background-color: #faf5ee;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar {
+        color: #1c1c1c;
+        width: 80%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+    
+    .guys {
+        color: #1c1c1c;
+        font-size: 20px;
+    }
+    
+    .nav-links {
+        margin-top: 1.5%;
+        justify-content: left;
+    }
+    
+    .nav-links ul {
+        list-style: none;
+    }
+    
+    .nav-links ul li {
+        display: inline-block;
+        margin: 8px 40px;
+    }
+    
+    .nav-links ul li a {
+        text-decoration: none;
+        color: #1c1c1c;
+        font-size:  25px;
+    }
+    
+    .search {
+        margin-top: 1.5%;
+        color: #1c1c1c;
+        font-size: 40px;
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .search img {
+        height: 70%;
+        width: 40%;
+        right: 30%;
+    }
+    
+    .search button {
+        background-color: #FAF5EE;
+        border-radius: 30px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    
+    .resources-helplines .div {
+        background-color: #faf5ee;
+        width: 1440px;
+        height: 1464px;
+        position: relative;
+    }
+    
+    .resources-helplines .group {
+        position: absolute;
+        width: 1362px;
+        height: 343px;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .resources-helplines .group-2 {
+        position: absolute;
+        width: 1362px;
+        height: 75px;
+        top: 0;
+        left: 0;
+    }
+    
+    .resources-helplines .navbar {
+        position: absolute;
+        width: 657px;
+        height: 48px;
+        top: 13px;
+        left: 393px;
+    }
+    
+    .resources-helplines .text-wrapper {
+        left: 0;
+        position: absolute;
+        top: 0;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .text-wrapper-2 {
+        left: 115px;
+        position: absolute;
+        top: 0;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .text-wrapper-3 {
+        left: 232px;
+        position: absolute;
+        top: 0;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .text-wrapper-4 {
+        left: 418px;
+        position: absolute;
+        top: 0;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .text-wrapper-5 {
+        left: 531px;
+        position: absolute;
+        top: 0;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .text-wrapper-6 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "Poppins-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #1c1c1c;
+        font-size: 50px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .overlap-group-wrapper {
+        position: absolute;
+        width: 223px;
+        height: 73px;
+        top: 0;
+        left: 1139px;
+    }
+    
+    .resources-helplines .overlap-group {
+        position: relative;
+        width: 221px;
+        height: 73px;
+        background-color: #ffffff;
+        border-radius: 90px;
+        border: 3px solid;
+        border-color: #000000;
+    }
+    
+    .resources-helplines .iconly-bold-search {
+        position: absolute;
+        width: 35px;
+        height: 37px;
+        top: 15px;
+        left: 21px;
+    }
+    
+    .resources-helplines .text-wrapper-7 {
+        position: absolute;
+        width: 127px;
+        top: 10px;
+        left: 69px;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .text-wrapper-8 {
+        position: absolute;
+        top: 271px;
+        left: 59px;
+        font-family: "Poppins-Light", Helvetica;
+        font-weight: 300;
+        color: #000000;
+        font-size: 48px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .group-3 {
+        position: absolute;
+        width: 1021px;
+        height: 72px;
+        top: 70px;
+        left: 179px;
+    }
+
+    .resources-helplines .group-3 img {
+        top: 62px;
+        left: 850px;
+    }
+    
+    .resources-helplines .p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 48px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .iconly-bulk-arrow {
+        position: absolute;
+        width: 35px;
+        height: 37px;
+        top: 18px;
+        left: 984px;
+    }
+    
+    .resources-helplines .group-wrapper {
+        position: absolute;
+        width: 1221px;
+        height: 901px;
+        top: 461px;
+        left: 109px;
+        background-color: #ffffff;
+        border-radius: 43px;
+    }
+    
+    .resources-helplines .group-4 {
+        position: relative;
+        width: 902px;
+        height: 820px;
+        top: 35px;
+        left: 47px;
+    }
+    
+    .resources-helplines .group-5 {
+        position: absolute;
+        width: 605px;
+        height: 105px;
+        top: 0;
+        left: 0;
+    }
+    
+    .resources-helplines .text-wrapper-9 {
+        position: absolute;
+        top: 57px;
+        left: 69px;
+        font-family: "Poppins-Medium", Helvetica;
+        font-weight: 500;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .iconly-bold-calling {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 3px;
+        left: 0;
+    }
+    
+    .resources-helplines .text-wrapper-10 {
+        position: absolute;
+        top: 0;
+        left: 69px;
+        font-family: "Poppins-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    
+    .resources-helplines .group-6 {
+        position: absolute;
+        width: 658px;
+        height: 105px;
+        top: 143px;
+        left: 10px;
+    }
+    
+    .resources-helplines .group-7 {
+        position: absolute;
+        width: 782px;
+        height: 105px;
+        top: 286px;
+        left: 10px;
+    }
+    
+    .resources-helplines .group-8 {
+        position: absolute;
+        width: 805px;
+        height: 105px;
+        top: 429px;
+        left: 10px;
+    }
+    
+    .resources-helplines .group-9 {
+        position: absolute;
+        width: 555px;
+        height: 105px;
+        top: 572px;
+        left: 10px;
+    }
+    
+    .resources-helplines .group-10 {
+        position: absolute;
+        width: 896px;
+        height: 105px;
+        top: 715px;
+        left: 10px;
+    }
+    
