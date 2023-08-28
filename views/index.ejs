@@ -1,31 +1,109 @@
-<div class="author">
-    <h1 class="author_heading">It's okay to not be okay ; It's okay to ask for help;</h1>
-    <p lcass="author_body">Our mission is to make people suffering from mental health feel comfortable , we provide you with resources to reach out for help , we provide some jokes and inspirational quotes for you to get your daily dose of happiness and we hope that you get well soon .</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title%></title>
+    <link rel = "stylesheet" href="/css/styles.css">
+    <meta name="description" content="<%= locals.description %>">
+    <script type="text/javascript" defer src="/js/script.js"></script>
+</head>
+<body>
+    <div class="searchBar">
+        <div class="container">
+            <form action="/search" class="search_form" role="search" method="POST">
+                <input 
+                type="search"
+                aria-Label="Search"
+                id="searchInput"
+                name="searchTerm"
+                placeholder="Search the site....."/>
+    
+            </form>
+            
+            <div id="searchClose ">Close</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <header class="header">
+            <a href="/" class="header_logo">TheApiGuys</a>
+        
+            <nav class="header_nav">
+                <ul>
+                    <li>
+                        <a href="/" class="">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/about" class="">About</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/resources" class="">Resources</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/jokes" class="">Jokes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/quotes" class="">Quotes</a>
+                    </li>
+                </ul>
+        
+                <div class="header_button">
+                    <button class="searchBtn" aria-expanded="false">
+                        Search
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.79167 13.4583C10.9213 13.4583 13.4583 10.9213 13.4583 7.79167C13.4583 4.66205 10.9213 2.125 7.79167 2.125C4.66205 2.125 2.125 4.66205 2.125 7.79167C2.125 10.9213 4.66205 13.4583 7.79167 13.4583Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.875 14.875L11.7938 11.7938" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+        
+        
+            </nav>
+        </header>
+        <main class="main">
+            <div class="author">
+                <h1 class="author_heading">It's okay to not be okay ; It's okay to ask for help;</h1>
+                <p lcass="author_body">Our mission is to make people suffering from mental health feel comfortable , we provide you with resources to reach out for help , we provide some jokes and inspirational quotes for you to get your daily dose of happiness and we hope that you get well soon .</p>
+            
+            
+            </div>
+            
+            <img src="img/hero-image.webp" alt="person looking out of window" class="hero-image" width="981" height="528">
 
-
-</div>
-
-<img src="img/hero-image.webp" alt="person looking out of window" class="hero-image" width="981" height="528">
-<p lcass="author_body"> <%= jok %> </p>
-<p lcass="author_body"><%= quot%></p>
-
-<section class="articles">
-    <h2 class="articles_heading">Latest Posts</h2>
-
-    <ul class="article-ul">
-      <% data.forEach(post => { %>
-        <li>
-            <a href="/post/<%= post._id %>">
-                <span> <%= post.title %></span>
-                <span class="article-list_date"><%= post.createdAt.toDateString() %></span>
-            </a>
-        </li>
-       <% }) %>
-
-
-    </ul>
-
+            
+            <section class="articles">
+                <h2 class="articles_heading">Latest Posts</h2>
+            
+                <ul class="article-ul">
+                  <% data.forEach(post => { %>
+                    <li>
+                        <a href="/post/<%= post._id %>">
+                            <span> <%= post.title %></span>
+                            <span class="article-list_date"><%= post.createdAt.toDateString() %></span>
+                        </a>
+                    </li>
+                   <% }) %>
+            
+            
+                </ul>
+            
+               
+            
+            </section>
+        </main>
+        
+ 
    
 
-</section>
- 
+
+</body>
+ </html>
