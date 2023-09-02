@@ -81,7 +81,7 @@
   
   .resources .overlap-group {
     height: 810px;
-    background-image: url(../img/org_1.jpg);
+    background-image: url(../img1/org_1.jpg);
     position: relative;
     width: 1406px;
     background-size: cover;
@@ -122,7 +122,7 @@
   
   .resources .overlap {
     height: 810px;
-    background-image: url(../img/org_3.jpg);
+    background-image: url(../img1/org_3.jpg);
     position: relative;
     width: 1406px;
     background-size: cover;
@@ -159,7 +159,7 @@
     height: 810px;
     top: 3004px;
     left: 0;
-    background-image: url(../img/org_4.jpg);
+    background-image: url(../img1/org_4.jpg);
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -203,7 +203,7 @@
   
   .resources .overlap-2 {
     height: 849px;
-    background-image: url(../img/org_2.jpg);
+    background-image: url(../img1/org_2.jpg);
     position: relative;
     width: 1406px;
     background-size: cover;

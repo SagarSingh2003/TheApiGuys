@@ -1,69 +1,200 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/jokes.css" />
-  </head>
-  <body>
-    <div class="navbar">
-            
-      <div class="guys">
-          <h1> TheApiGuys </h1>
-      </div>
+<html lang="en">
 
-      <div class="nav-links">
-          <ul>
-            <li><a href="/"> Home </a></li>
-            <li><a href="/about"> About Us </a></li>
-            <li><a href="/resources"> Resources </a></li>
-            <li><a href="/jokes"> Jokes </a></li>
-            <li><a href="/quotes"> Quotes </a></li>
-          </ul>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        .nav-link {
+            color: rgba(60, 59, 59, 0.358);
+        }
 
-</div>
-    <div class="jokes">
-      <div class="div">
+        .nav-link:hover {
+            color: #000000;
+            transition: color 0.3s;
+        }
 
-        <div class="group-2">
-          <div class="div-wrapper">
+        .joke-generator {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f7f7f7;
+        }
 
-            <div class="overlap-group"><div class="text-wrapper-8">Jokes</div></div>
+        .joke-text {
+            min-height: 100px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-          </div>
-                
-            <div class="div-wrapper">
+        #generateButton {
 
-              <div class="overlap-group"><div class="text-wrapper-8">jokes</div></div>
+            border: 2px solid black;
+        }
 
+        #generateButton:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* 
+        body{
+            background-image: url("https://source.unsplash.com/random/500x700/?smiles");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        } */
+
+        @media (max-width: 500px) {
+            body {
+                background-image: url("https://source.unsplash.com/random/500x700/?nature");
+                background-image: url("https://source.unsplash.com/random/500x700/?smiles");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 900px) {
+            body {
+                background-image: url("https://source.unsplash.com/random/900x700/?smiles");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 2800px)  {
+            body {
+                background-image: url("https://source.unsplash.com/random/1080x1000/?nature");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand h1" href="/">TheAPIGuys</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/jokes">Jokes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="--bs-link-hover-color-rgb: 25, 135, 84;" aria-current="page"
+                            href="/quotes">Quotes</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
+        </div>
+    </nav>
 
-            
-            <div class="overlap-wrapper">
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="joke-generator">
+                    <h1 class="text-center mb-4">Joke Generator</h1>
+                    
 
-              <form action="/jokes" method="post" >
-                <div class="overlap"> <input type="submit" value="generate a new joke" class="text-wrapper-9" style="background-color: azure;border: none; padding:10px ; padding-right: 25px ; cursor: pointer;"> </div>
-              </form>
+                    <% if (locals.jok) { %>
+                        <div id="joke" class="joke-text"><%= jok %></div>
+                    <% } else{%>
+                        <div id="joke" class="joke-text">Let's laugh a little</div>
+                    <%}%>  
 
+
+                    <form action="/jokes" method="post">
+                        <button id="generateButton" class="btn  btn-block text-center">Generate Joke</button>
+                    </form>    
+                    </div>
             </div>
-            <p class="p"> Would you like to listen to jokes???</p>
-
-            <% if (locals.jok) { %>
-
-              <div class="rectangle"> <%= jok %></div>
-            
-
-              <% } else{%>
-
-                <div class="rectangle"> lets listen to a joke </div>
-              
-    
-                <% }%>
-                  
-            
-          </div>
-      </div>    
-      </div>
+        </div>
     </div>
-  </body>
+
+    <footer class="bg-dark text-center text-white fixed-bottom">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="" style="text-decoration: none;">TheApiGuys</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    
+
+    <script src="https://kit.fontawesome.com/bf04fb3b26.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

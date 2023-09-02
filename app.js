@@ -21,7 +21,7 @@ const locals = {
 
 const quotesurl = "https://cloud.syncloop.com/tenant/1691731675822/packages.handson3.api.getQuotes.main";
 const jokesurl = "https://cloud.syncloop.com/tenant/1691731675822/packages.handson3.api.getJokes.main";
-const token = "5zX/2VXijNuKmwQIwaM2mTxLIUcrMw/l8djfBMZyBOklB5bXVUH6+fd+qV8hA0QG0cMfuZKeddg0zztf2o72KCfkU3U+npM8xcBKwFSXdFXMDvzqQ8xx+XlowQzNckqU/VGIPb1ctNf2R2Ku5dG1GeFugAV/jSNHWf3r+MkLlA1o/Np3A/h3lDKWnNtHfnV+Xt7YPzvtR9P3G9rn/1GAYELiL5ykIpNYyRoHI2FQEN356Jx+gM9v9/WOfJ0yJ3hRufDNDRBdMcOLJ06gVRTaj7RruXAPFZEBQCK3Bcv6icoIREi3EKusZU0VLFRYr9X6gfBBAnMCT7XAlaVw/agFCHLUNWYVDCbPF2pTOkh5EqwHDnPTQ4C8W3yjDL4jYLhVFiBI1JN0DydSrlWCUOrG1VwrxKbZ22urEKOhBKsHyehpdwMP3kK/VPNg81jpGaab9GRmfwdbhd7tpxE4IMzWL4QAzbK9PkVheYr5PV9KZJBavTMSC1aGJLo5QuTKNTPy";
+const token = "5zX/2VXijNuKmwQIwaM2mTxLIUcrMw/l8djfBMZyBOklB5bXVUH6+fd+qV8hA0QG0cMfuZKeddg0zztf2o72KCfkU3U+npM8xcBKwFSXdFXMDvzqQ8xx+XlowQzNckqU/VGIPb1ctNf2R2Ku5dG1GeFugAV/jSNHWf3r+MkLlA1o/Np3A/h3lDKWnNtHfnV+Xt7YPzvtR9P3G9rn/1GAYELiL5ykIpNYyRoHI2FQEN356Jx+gM9v9/WOfJ0yJ3hRufDNDRBdMcOLJ06gVRTaj1M96dn4CzW5DHE1lfGBQJPSpYQU+1o4fFSFRkDDGAFvlpPhM4fHtDRrMjQE1/o8cnLUNWYVDCbPF2pTOkh5EqwHDnPTQ4C8W3yjDL4jYLhVFiBI1JN0DydSrlWCUOrG1VwrxKbZ22urEKOhBKsHyehpdwMP3kK/VPNg81jpGaabensO9u8hF5VrQhYKyg3WWKcznPzfIZRlq8GD1d0V+ZQPREOMHUb6M8pSvqzaNWgx";
 
 //Connect to DB
 connectDB();
@@ -50,9 +50,13 @@ app.get('/quotes', (req, res) => {
     res.render('quotes.ejs')
 });
 
+
+  
 app.get('/resources' , (req, res) => {
     res.render('resources.ejs')
 });
+
+
 
 app.get('/disorder' , (req, res) => {
     res.render('disorder.ejs')

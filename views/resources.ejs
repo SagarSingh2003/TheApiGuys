@@ -1,107 +1,246 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/resources.css" />
-  </head>
-  <body>
-    <div class="navbar">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/resources.css">
+    <style>
+        body{
+            text-align: center;
+        }
+        .nav-link {
+            color: rgba(60, 59, 59, 0.358);
+        }
+
+        .nav-link:hover {
+            color: #000000;
+            transition: color 0.3s;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                background-image: url("https://source.unsplash.com/random/500x700/?moon");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 900px) {
+            body {
+                background-image: url("https://source.unsplash.com/random/900x700/?moon");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 2800px)  {
+            body {
+                background-image: url("https://source.unsplash.com/random/1080x1000/?moon");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+               
+            }
+        }
+
         
-      <div class="guys">
-          <h1> TheApiGuys </h1>
-      </div>
+    </style>
+</head>
 
-      <div class="nav-links">
-          <ul>
-            <li><a href="/"> Home </a></li>
-            <li><a href="/about"> About Us </a></li>
-            <li><a href="/resources"> Resources </a></li>
-            <li><a href="/jokes"> Jokes </a></li>
-            <li><a href="/quotes"> Quotes </a></li>
-          </ul>
-      </div>
+<body>
 
-
-    </div>
-    <div class="resources">
-      <div class="div">
-        <div class="text-wrapper-8">Books:</div>
-        <p class="p">Ways for improvisation of mental health</p>
-        <img class="iconly-bulk-arrow" src="../img/right_icon.svg" />
-        <div class="overlap-wrapper">
-          <div class="overlap">
-            <div class="rectangle"></div>
-            <img class="img" src="../img/unlimited_power.jpg" />
-            <div class="unlimited-power-by">
-              Unlimited Power by
-              Anthony&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Robbins
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand h1" href="/">TheAPIGuys</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/jokes">Jokes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="--bs-link-hover-color-rgb: 25, 135, 84;" aria-current="page"
+                            href="/quotes">Quotes</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-          </div>
         </div>
-        <div class="div-wrapper">
-          <div class="overlap-2">
-            <img class="rectangle-2" src="../img/beast_beautiful.jpg" />
-            <p class="first-we-make-the">
-              First, We Make the Beast Beautiful: A New Journey Through Anxiety&nbsp;&nbsp;by Sarah Wilson
-            </p>
-          </div>
-        </div>
-        <div class="group-2">
-          <div class="overlap-2">
-            <img class="rectangle-3" src="../img/anxiety_phobia.jpg" />
-            <div class="text-wrapper-9">The Anxiety Phobia Workbook</div>
-          </div>
-        </div>
-        <div class="group-3">
-          <div class="overlap-3">
-            <div class="rectangle"></div>
-            <img class="rectangle-2" src="../img/feeling_good.jpg" />
-            <p class="text-wrapper-10">Feeling Good : The New Mood Therapy</p>
-          </div>
-        </div>
-        <div class="group-4">
-          <div class="overlap-2">
-            <img class="rectangle-4" src="../img/through_depression.jpg" />
-            <p class="text-wrapper-11">The Mindful Way through Depression</p>
-          </div>
-        </div>
-        <div class="group-5">
-          <div class="overlap-2">
-            <img class="rectangle-5" src="../img/body_keeps_the_score.jpg" />
-            <p class="the-body-keeps-the">
-              The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma&#34; by Bessel van der Kolk
-            </p>
-          </div>
-        </div>
-        <p class="text-wrapper-12">Get to know more about the ways to improve your mental health</p>
-        <div class="overlap-4">
-          <div class="group-6">
-            <div class="overlap-5">
-              <img class="rectangle-6" src="../img/photo_2023-08-26_22-42-45.jpg" />
-              <img class="rectangle-7" src="../img/photo_2023-08-26_22-42-35.jpg" />
+    </nav>
+
+
+
+    <div class="container text-center mt-5" >
+        <div class="row">
+            <div class="col-md-6 text-center mt-5 d-flex flex-row justify-content-center align-items-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/res/body_keeps_the_score.jpg" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma" by Bessel van der Kolk</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <img class="rectangle-8" src="" />
+            <div class="col-md-6 text-center mt-5 d-flex flex-row justify-content-center align-items-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/res/unlimited_power.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Unlimited Power by AnthonyRobbins..</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="group-7">
-          <div class="overlap-6">
-            <div class="text-wrapper-13" ><a href="/organisation">organisations</a></div>
-            <img class="iconly-bold-arrow" src="../img/left_arrow.svg" />
-          </div>
-        </div>
-        <div class="group-8">
-          <div class="overlap-6">
-            <div class="text-wrapper-14"><a href="helplines">helplines</a></div>
-            <img class="iconly-bold-arrow" src="../img/left_arrow.svg" />
-          </div>
-        </div>
-        <div class="group-9">
-          <div class="overlap-6">
-            <div class="text-wrapper-15"><a href="disorder">disorders</a></div>
-            <img class="iconly-bold-arrow-2" src="../img/left_arrow.svg" />
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+
+    <div class="container text-center mt-5">
+        <div class="row">
+            <div class="col-md-6 text-center mt-5 d-flex flex-row justify-content-center align-items-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/res/beast_beautiful.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">First, We Make the Beast Beautiful: A New Journey Through Anxiety  by Sarah Wilson</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center mt-5 d-flex flex-row justify-content-center align-items-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/res/through_depression.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">The Mindful Way through Depression</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container text-center mt-5 text-light " >
+        <div class="row">
+            <div class="col-md-6 text-center mt-5 d-flex flex-row justify-content-center align-items-center text-light">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/res/anxiety_phobia.jpg" class="card-img-top" >
+                    <div class="card-body">
+                        <p class="card-text">The Anxiety Phobia Workbook</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center mt-5 d-flex flex-row justify-content-center align-items-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/res/feeling_good.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Feeling Good : The New Mood Therapy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Single column with combined images and descriptions -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img1/org_2.jpg" alt="Photo 1" class="img-fluid">
+                        <a href="/organisation"><h3 class="text-light">Organizations</h3></a>
+                        <p class="text-light">Here you can a find a list of Organizations where you can reach out for help </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img1/anxiety_disorder.jpg" alt="Photo 2" class="img-fluid">
+                        <a href="/disorder"><h3 class="text-light">Disorders</h3></a>
+                        <p class="text-light">Here you can learn more about various types of disorders. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img1/helpme1.jpg" alt="Photo 3" class="img-fluid">
+                        <a href="/helplines"><h3 class="text-light">Helplines</h3></a>
+                        <p class="text-light">Here we provide a list of helplines based in India where you can find the right guidance for your well being</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div style="margin-top: 200px;">
+    </div>
+
+    <footer class="bg-dark text-center text-white fixed-bottom">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="" style="text-decoration: none;">TheApiGuys</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    
+    
+
+   
+
+    <script src="https://kit.fontawesome.com/bf04fb3b26.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
