@@ -79,7 +79,7 @@ npm run dev
 ```
 
 
-5. **Access the Website**: Open your web browser and navigate to `http://localhost:3000` to explore the website.
+5. **Access the Website**: Open your web browser and navigate to `http://localhost:5000` to explore the website.
 
 ## Usage
 
